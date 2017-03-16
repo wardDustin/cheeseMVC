@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head"></head>
+<body>
+<h1 th:text="${title}">Default Title</h1>
+
+<nav th:replace="fragments :: navigation"></nav>
+
+<form method="post" >
+    <input type="text" name="cheeseName" />
+    <input type="submit" value="Remove Cheese" />
+    <p class="error" th:text="${error}"></p>
+</form>
+
+<h4 th:if="${!cheeses.isEmpty()}">Cheeses to Remove</h4>
+<ul th:each="cheese : ${cheeses}">
+    <li th:text="${cheese.name}"></li>
+</ul>
+
+</body>
+</html>

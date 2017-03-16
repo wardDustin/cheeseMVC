@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    font-size: 20px;
+}
+
+nav a {
+    color: #0004ff;
+    margin-right: 15px;
+}
+
+textarea {
+    height: 100px;
+    width: 250px;
+}
+
+.inner-li {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+.error {
+    color: red;
+    font-family: Tahoma;
+    margin-top: 0;
+}
+
+input[type="text"] {
+    margin: 10px 10px 10px 0;
+}
